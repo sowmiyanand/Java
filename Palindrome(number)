@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int n = scan.nextInt();
+     
+        boolean result = isPalindrome(n);
+        
+     
+        if (result) {
+            System.out.println(n + " is a palindrome.");
+        } else {
+            System.out.println(n + " is not a palindrome.");
+        }
+    }
+
+    static boolean isPalindrome(int x) {
+        int temp = x;
+        int rev = 0;
+        
+        // Reverse the number
+        while (x > 0) {
+            int digit = x % 10;
+            rev = (rev * 10) + digit;
+            x = x / 10;
+        }
+        
+     
+        return rev == temp;
+    }
+}
