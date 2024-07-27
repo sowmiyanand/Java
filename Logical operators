@@ -1,0 +1,25 @@
+import java.util.*;
+public class Main{
+	public static void main(String[] args){
+	    Scanner scan=new Scanner(System.in);
+	    int score=scan.nextInt();
+	    if(score<50){
+	        System.out.print("You need to improve");
+	    }
+	    else if(score ==50 || score<=70){
+	         System.out.print("Good job");
+	    }
+	    else{
+	        System.out.print("Excellent");
+	    }
+
+	    
+	}
+}
+
+
+
+
+//**The Output are:
+85:excellent
+70:good job
