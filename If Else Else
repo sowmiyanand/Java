@@ -1,0 +1,33 @@
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+       String colour = sc.nextLine();
+       String s1="Red";
+       String s2="Yellow";
+       String s3="Green";
+       
+       if(colour.contentEquals(s1)){
+           System.out.println("STOP");
+       }
+       else if(colour.contentEquals(s2)){
+           System.out.println("READY");
+       }
+       else if(colour.contentEquals(s3)){
+           System.out.println("GO");
+       }
+    }
+}
+
+
+//*The Output are:
+Green:Go
+
+
+
+
+
+
+
+
+
